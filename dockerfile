@@ -2,7 +2,7 @@
 FROM python:3.10-slim
 
 # Set working directory
-WORKDIR /app
+WORKDIR /
 
 # Copy all files into the container
 COPY . .
@@ -19,4 +19,4 @@ ENV FLASK_APP=app/app.py
 ENV FLASK_RUN_HOST=0.0.0.0
 
 # Run the application
-CMD ["python", "app/app.py"]
+CMD ["python", "app.py"]
